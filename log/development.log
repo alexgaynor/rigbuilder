@@ -13676,3 +13676,72 @@ Served asset /layout.css - 304 Not Modified (0ms)
 
 Started GET "/assets/shell.css?body=1" for 127.0.0.1 at 2013-09-24 12:32:55 -0400
 Served asset /shell.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /base.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /skeleton.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /layout.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shell.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /shell.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-24 13:02:54 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Processing by GuitarsController#index as HTML
+  [1m[36mGuitar Load (0.1ms)[0m  [1mSELECT "guitars".* FROM "guitars" [0m
+  Rendered guitars/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 4.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /base.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shell.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /shell.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/skeleton.css?body=1" for 127.0.0.1 at 2013-09-24 13:02:58 -0400
+Served asset /skeleton.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateGuitars (20130917042317)
+Migrating to CreateAmps (20130917210420)
+Migrating to CreatePedels (20130917210432)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
