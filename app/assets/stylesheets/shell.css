@@ -1,0 +1,111 @@
+html {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+header {
+	width:100%;
+	height:100px;
+	background:navy;
+}
+nav {
+	width:150px;
+	margin:auto;
+	text-align: center;
+}
+ul {
+	margin:auto;
+}
+ul li{
+	display:inline-block;
+	padding:10px;
+}
+section {
+	margin:auto;
+	text-align: center;
+	background: #f0f0f0;
+}
+#body-cont {
+	width:960px;
+	height:1000px;
+	margin:auto;
+	/*border:1px solid black;*/
+}
+#form-wrap {
+	width:200px;
+	margin:auto;
+
+
+}
+.main-select {
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	display:inline-block;
+	margin-left:10px;
+	margin-top:40px;
+	text-align:center;
+	border-radius:5px;
+	opacity:.82;
+}
+.main-select:hover {
+	opacity: .98;
+	cursor: pointer;
+}
+.main-select h2 {
+	text-decoration: none;
+	font-weight:700;
+	color:navy;
+	line-height: 0;
+	margin-top:0;
+	padding-top:20px;
+}
+#container {
+	width:800px;
+	margin:auto;
+
+}
+h2 {
+	margin-top:40px;
+	text-align: center;
+}
+#guitars {
+	background-image:url('/guitars.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+#amps {
+	background-image: url('/amps.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+#amps h2 {
+	color:white;
+}
+#pedels {
+	background-image: url('/pedals.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.form-wrap {
+	background:navy;
+	width:400px;
+	margin:auto;
+	padding:10px;
+	margin-top:50px;
+}
+.form-wrap form{
+	text-align:center;
+	color:white;
+}
+.form-wrap form input, select{
+	margin:auto;
+	margin-top:10px;
+}

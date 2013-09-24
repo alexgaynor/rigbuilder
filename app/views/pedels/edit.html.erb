@@ -1,0 +1,27 @@
+<h2>Edit the <%= @pedel.pedel_manufacturer %> <%= @pedel.pedel_model %></h2>
+
+<div class="offset-by-five four columns form-wrap">
+	<form action="/pedels/<%= @pedel.id %>" method="post">
+		<div>
+			<label for="pedel_type">Type:</label>
+			<input type="text" name="pedel[pedel_type]" value="<%= @pedel.pedel_type %>" />
+		</div>
+		<div>
+			<label for="pedel_manufacturer">Who makes the pedel?</label>
+			<input type="text" name="pedel[pedel_type]" value="<%= @pedel.pedel_manufacturer %>" />
+		</div>
+		<div>
+			<label for="pedel_model">What model is it?</label>
+			<input type="text" name="pedel[pedel_model]" value="<%= @pedel.pedel_model %>" />
+		</div>
+		<div>
+			<label for="pedel_inputs">How many inputs does it have?</label>
+			<input type="text" name="pedel[pedel_inputs]" value="<%= @pedel.pedel_inputs %>"/>
+		</div>
+		<div>
+			<label for="pedel_outputs">How many outputs does it have?</label>
+			<input type="text" name="pedel[pedel_outputs]" value="<%= @pedel.pedel_outputs %>" />
+		</div>
+		<input type="submit" value="Update Pedel" />
+	</form>
+</div>

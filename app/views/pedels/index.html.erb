@@ -1,0 +1,16 @@
+<h2>Pedels Page</h2>
+<div id="container">
+	<nav><a href="/">&larr; Back</a> || <a href="/pedels/new">New Pedel</a></nav>
+
+	<% @pedels.each do |p| %>
+		<section>
+			<h2><%= p.pedel_manufacturer %> <%= p.pedel_model %></h2>
+			<ul>
+				<li>Function: 	<%= p.pedel_type %></li>
+				<li><%= p.pedel_inputs %> Inputs</li>
+				<li><%= p.pedel_outputs %> Outputs</li>
+			</ul>
+			<nav><a href="/pedels/<%= p.id %>/edit">Edit</a> || <a href="/pedels/<%= p.id %>/delete">Delete</a></nav>
+		</section>
+	<% end %>
+</div>

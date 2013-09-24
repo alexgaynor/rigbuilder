@@ -1,0 +1,13 @@
+<%= form_for pedel do |p| %>
+	<%= p.label "What type of pedel is it?" %>
+	<%= p.text_field :pedel_type %>
+	<%= p.label "Who made it?" %>
+	<%= p.text_field :pedel_manufacturer %>
+	<%= p.label "What model is it" %>
+	<%= p.text_field :pedel_model %>
+	<%= p.label "How many inputs does it have" %>
+	<%= p.text_field :pedel_inputs %>
+	<%= p.label "How many outputs does it have" %>
+	<%= p.text_field :pedel_outputs %>
+	<%= p.submit %>
+<% end %>

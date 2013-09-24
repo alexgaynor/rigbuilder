@@ -1,0 +1,35 @@
+<h2>Edit the <%= @amp.amp_manufacturer %> <%= @amp.amp_model %></h2>
+
+<div class="offset-by-five four columns form-wrap">
+	<form action="/amps/<%= @amp.id %>" method="post">
+		<div>
+			<label for="amp_type">Type:</label>
+			<input type="text" name="amp[amp_type]" value="<%= @amp.amp_type %>" />
+		</div>
+		<div>
+			<label for="amp_manufacturer">Manufacturer:</labal>
+			<input type="text" name="amp[amp_manufacturer" value="<%= @amp.amp_manufacturer %>" />
+		</div>
+		<div>
+			<label for="amp_model">Model:</label>
+			<input type="text" name="amp[amp_model]" value="<%= @amp.amp_model %>" />
+		</div>
+		<div>
+			<label for="amp_year">Year:<label>
+			<input type="text" name="amp[amp_year]" value="<%= @amp.amp_year %>" />
+		</div>
+		<div>
+			<label for="amp_speakers">Speakers:</label>
+			<input type="text" name="amp[amp_speakers]" value="<%= @amp.amp_speakers %>" />
+		</div>
+		<div>
+			<label for="amp_power">Power:</label>
+			<input type="text" name="amp[amp_power]" value="<%= @amp.amp_power %>" />
+		</div>
+		<div>
+			<label for="amp_channels">Channels:</label>
+			<input type="text" name="amp[amp_channels]" value="<%= @amp.amp_channels %>" />
+		</div>
+		<input type="submit" value="Update Amp" />
+	</form>
+</div>

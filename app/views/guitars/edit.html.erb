@@ -1,0 +1,46 @@
+<h2>Edit the <%= @guitar.guitar_manufacturer %> <%= @guitar.guitar_model %></h2>
+<div class="offset-by-five four columns form-wrap">
+	<form action="/guitars/<%= @guitar.id %>" method="post">
+		<div>
+			<label for="guitar_type">What type of Guitar is it?</label>
+			<input type="text" name="guitar[guitar_type]" value="<%= @guitar.guitar_type %>" />
+		</div>
+		<div>
+			<label for="guitar_manufacturer">Who makes it?</label>
+			<input type="text" name="guitar[guitar_manufacturer]" value="<%= @guitar.guitar_manufacturer %>" />
+		</div>
+		<div>
+			<label for="guitar_model">What model is it?</label>
+			<input type="text" name="guitar[guitar_model]" value="<%= @guitar.guitar_model %>" />
+		</div>
+		<div>
+			<label for="guitar_color">What color is it?</label>
+			<input type="text" name="guitar[guitar_color]" value="<%= @guitar.guitar_color %>" />
+		</div>
+		<div>
+			<label for="guitar_year">What year was it produced</label>
+			<input type="text" name="guitar[guitar_year]" value="<%= @guitar.guitar_year %>" />
+		</div>
+		<div>
+			<label for="guitar_num_strings">How many strings</label>
+			<input type="text" name="guitar[guitar_num_strings]" value="<%= @guitar.guitar_num_strings %>" />
+		</div>
+		<div>
+			<label for="guitar_set_neck">Does it have a set neck</label>
+			<select name="guitar[guitar_set_neck]">
+				<% if @guitar.guitar_set_neck %>
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				<% else %>
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				<% end %>
+			</select>
+		</div>
+		<div>
+			<label for="guitar_pickups">How many pickups does it have</label>
+			<input type="text" name="guitar[guitar_pickups]" value="<%= @guitar.guitar_pickups %>" />
+		</div>
+		<input type="submit" value="Update Guitar" />
+	</form>
+</div>

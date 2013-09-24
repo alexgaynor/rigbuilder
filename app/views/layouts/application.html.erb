@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shredsticks</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header><h1>Build Your Rig</h1></header>
+	<div id="body-cont">
+		<%= yield %>
+	</div>
+</body>
+</html>

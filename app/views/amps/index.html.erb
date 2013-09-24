@@ -1,0 +1,18 @@
+<h2>Amps Page</h2>
+<div id="container">
+	<nav><a href="/">&larr; Back</a> || <a href="/amps/new">New Amp</a></nav>
+	
+
+	<% @amps.each do |a| %>
+		<section>
+			<h2><%= a.amp_year %> <%= a.amp_manufacturer %> <%= a.amp_model %></h2>
+			<ul>
+				<li><%= a.amp_type %></li>
+				<li><%= a.amp_speakers %> speakers</li>
+				<li><%= a.amp_power %> Watts</li>
+				<li><%= a.amp_channels %> channels</li>
+			</ul>
+			<a href="/amps/<%= a.id %>/edit">Edit</a> || <a href="/amps/<%= a.id %>/delete">Delete</a>
+		</section>
+	<% end %>
+</div>

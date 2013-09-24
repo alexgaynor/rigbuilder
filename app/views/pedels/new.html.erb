@@ -1,0 +1,27 @@
+<!-- <form action="/pedels/create" method="post">
+	<div>
+		<label for="pedel_type">What type of pedel is it?</label>
+		<input type="text" name="pedel[pedel_type]" />
+	</div>
+	<div>
+		<label for="pedel_manufacturer">Who makes the pedel?</label>
+		<input type="text" name="pedel[pedel_manufacturer]" />
+	</div>
+	<div>
+		<label for="pedel_model">What model is it?</label>
+		<input type="text" name="pedel[pedel_model]" />
+	</div>
+	<div>
+		<label for="pedel_inputs">How many inputs does it have?</label>
+		<input type="text" name="pedel[pedel_inputs]" />
+	</div>
+	<div>
+		<label for="pedel_outputs">How many outputs does it have?</label>
+		<input type="text" name="pedel[pedel_outputs]" />
+	</div>
+	<input type="submit" value="Add Pedel" />
+</form> -->
+<h2>New Pedal</h2>
+<div class="offset-by-five four columns form-wrap">
+	<%= render partial: "pedel_form", locals: {pedel: @pedel} %>
+</div>

@@ -1,0 +1,17 @@
+<%= form_for amp do |a| %>
+	<%= a.label "What type of Amp is it?" %>
+	<%= a.text_field :amp_type %>
+	<%= a.label "Who made the amp?" %>
+	<%= a.text_field :amp_manufacturer %>
+	<%= a.label "What is the model of this Amp?" %>
+	<%= a.text_field :amp_model %>
+	<%= a.label "How many speakers does the amp have?" %>
+	<%= a.text_field :amp_speakers %>
+	<%= a.label "How many watts is it pushing?" %>
+	<%= a.text_field :amp_power %>
+	<%= a.label "How many channels does the amp have" %>
+	<%= a.text_field :amp_channels %>
+	<%= a.label "What year was it produced" %>
+	<%= a.text_field :amp_year %>
+	<%= a.submit %>
+<% end %>

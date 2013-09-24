@@ -1,0 +1,14 @@
+<section>
+	<h2><%= @guitar.guitar_year %> <%= @guitar.guitar_manufacturer %> <%= @guitar.guitar_model %></h2>
+	<ul>
+		<li><%= @guitar.guitar_color %></li>
+		<li><%= @guitar.guitar_num_strings %> strings</li>
+		<% if @guitar.guitar_set_neck %>
+			<li>Has a set neck</li>
+		<% else %>
+			<li>Does not have a set neck</li>
+		<% end %>
+		<li><%= @guitar.guitar_pickups %> pickups</li>
+	</ul>
+	<a href="/guitars/<%= @guitar.id %>/edit">Edit</a> || <a href="/guitars/<%= @guitar.id %>/delete">Delete</a>
+</section>

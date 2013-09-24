@@ -1,0 +1,21 @@
+<h2>Guitars Page</h2>
+<div id="container">
+	<nav><a href="/">&larr; Back</a> || <a href="/guitars/new">New Guitar</a></nav>	 
+
+	<% @guitars.each do |g| %>
+		<section>
+			<h2><%= g.guitar_year %> <%= g.guitar_manufacturer %> <%= g.guitar_model %></h2>
+			<ul>
+				<li>Color: <%= g.guitar_color %></li>
+				<li><%= g.guitar_num_strings %> strings</li>
+				<% if g.guitar_set_neck %>
+					<li>Has a set neck</li>
+				<% else %>
+					<li>Does not have a set neck</li>
+				<% end %>
+				<li><%= g.guitar_pickups %> pickups</li>
+			</ul>
+			<nav><a href="/guitars/<%= g.id %>/edit">Edit</a> || <a href="/guitars/<%= g.id %>/delete">Delete</a></nav>
+		</section>
+	<% end %>
+</div>

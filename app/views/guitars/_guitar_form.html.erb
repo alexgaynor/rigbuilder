@@ -1,0 +1,19 @@
+<%= form_for guitar do |g| %>
+	<%= g.label "What type of guitar is it?" %>
+	<%= g.text_field :guitar_type %>
+	<%= g.label "Who made it?" %>
+	<%= g.text_field :guitar_manufacturer %>
+	<%= g.label "What model is it?" %>
+	<%= g.text_field :guitar_model %>
+	<%= g.label "What color is it?" %>
+	<%= g.text_field :guitar_color %>
+	<%= g.label "How many strings does it have?" %>
+	<%= g.text_field :guitar_num_strings %>
+	<%= g.label "Does it have a set neck?" %>
+	<%= g.select(:guitar_set_neck, options_for_select([['Yes', true], ['No', false]], true)) %>
+	<%= g.label "How many pickups does it have?" %>
+	<%= g.text_field :guitar_pickups %>
+	<%= g.label "What year was it produced?" %>
+	<%= g.text_field :guitar_year %>
+	<%= g.submit %>
+<% end %>

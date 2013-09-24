@@ -1,0 +1,10 @@
+<section>
+	<h2><%= @amp.amp_year %> <%= @amp.amp_manufacturer %> <%= @amp.amp_model %></h2>
+	<ul>
+		<li><%= @amp.amp_type %></li>
+		<li><%= @amp.amp_speakers %> speakers</li>
+		<li><%= @amp.amp_power %> Watts</li>
+		<li><%= @amp.amp_channels %> channels</li>
+	</ul>
+	<a href="/amps/<%= @amp.id %>/edit">Edit</a> || <a href="/amps/<%= @amp.id %>/delete">Delete</a>
+</section>

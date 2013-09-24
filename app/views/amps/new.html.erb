@@ -1,0 +1,36 @@
+<h2>New Amp</h2>
+
+<!-- <form action="/amps/create" method="post">
+	<div>
+		<label for="amp_type">What type of amp is it?</label>
+		<input type="text" name="amp[amp_type]" />
+	</div>
+	<div>
+		<label for="amp_manufacturer">Who made it?</label>
+		<input type="text" name="amp[amp_manufacturer]" />
+	</div>
+	<div>
+		<label for="amp_model">What model is it?</label>
+		<input type="text" name="amp[amp_model]" />
+	</div>
+	<div>
+		<label for="amp_year">What year was it produced</label>
+		<input type="text" name="amp[amp_year]" />
+	</div>
+	<div>
+		<label for="amp_speakers">How many speakers does it have?</label>
+		<input type="text" name="amp[amp_speakers]" />
+	</div>
+	<div>
+		<label for="amp_power">How many Watts is it pushing?</label>
+		<input type="text" name="amp[amp_power]" />
+	</div>
+	<div>
+		<label for="amp_channels">How many channels does it have?</label>
+		<input type="text" name="amp[amp_channels]" />
+	</div>
+	<input type="submit" value="Add Amp" />
+</form> -->
+<div class="offset-by-five four columns form-wrap">
+	<%= render partial: "amp_form", locals: {amp: @amp} %>
+</div>
